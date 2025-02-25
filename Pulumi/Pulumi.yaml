@@ -1,0 +1,11 @@
+name: project
+description: A minimal AWS JavaScript Pulumi program
+runtime:
+  name: nodejs
+  options:
+    typescript: false
+    packagemanager: npm
+config:
+  pulumi:tags:
+    value:
+      pulumi:template: aws-javascript

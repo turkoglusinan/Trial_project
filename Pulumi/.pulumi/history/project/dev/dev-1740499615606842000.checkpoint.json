@@ -1,0 +1,481 @@
+{
+    "version": 3,
+    "checkpoint": {
+        "stack": "organization/project/dev",
+        "latest": {
+            "manifest": {
+                "time": "2025-02-25T11:06:55.599194-05:00",
+                "magic": "e6f9b63eec1c02224f3d9bb9346dbfaeb256b3b4d71dc3ee7581d37b584369c2",
+                "version": "v3.152.0"
+            },
+            "secrets_providers": {
+                "type": "passphrase",
+                "state": {
+                    "salt": "v1:zIJkvG9qN4g=:v1:W53l0XC4yHxCQF3n:OuUdEClBtziJ1TK75ZMHvq2btZWLVw=="
+                }
+            },
+            "resources": [
+                {
+                    "urn": "urn:pulumi:dev::project::pulumi:pulumi:Stack::project-dev",
+                    "custom": false,
+                    "type": "pulumi:pulumi:Stack",
+                    "outputs": {
+                        "instancesIds": [
+                            "i-0a0ab9384bbd6f70d",
+                            "i-0d1df1b838f6a7ca8",
+                            "i-0d78d8e70499c0191"
+                        ]
+                    },
+                    "created": "2025-02-25T16:06:41.114239Z",
+                    "modified": "2025-02-25T16:06:41.114239Z",
+                    "sourcePosition": "project:///node_modules/@pulumi/runtime/stack.ts#38,23"
+                },
+                {
+                    "urn": "urn:pulumi:dev::project::pulumi:providers:aws::default_6_69_0",
+                    "custom": true,
+                    "id": "b1096f7e-81e2-4f78-b1d5-33c865a356df",
+                    "type": "pulumi:providers:aws",
+                    "inputs": {
+                        "__internal": {},
+                        "region": "us-east-1",
+                        "skipCredentialsValidation": "false",
+                        "skipRegionValidation": "true",
+                        "version": "6.69.0"
+                    },
+                    "outputs": {
+                        "region": "us-east-1",
+                        "skipCredentialsValidation": "false",
+                        "skipRegionValidation": "true",
+                        "version": "6.69.0"
+                    },
+                    "created": "2025-02-25T16:06:42.394129Z",
+                    "modified": "2025-02-25T16:06:42.394129Z"
+                },
+                {
+                    "urn": "urn:pulumi:dev::project::aws:ec2/instance:Instance::new-new-trial-instance-0",
+                    "custom": true,
+                    "id": "i-0a0ab9384bbd6f70d",
+                    "type": "aws:ec2/instance:Instance",
+                    "inputs": {
+                        "__defaults": [
+                            "getPasswordData",
+                            "sourceDestCheck",
+                            "userDataReplaceOnChange"
+                        ],
+                        "ami": "ami-04b4f1a9cf54c11d0",
+                        "getPasswordData": false,
+                        "instanceType": "t2.micro",
+                        "keyName": "sinan-ec2-keypair",
+                        "sourceDestCheck": true,
+                        "tags": {
+                            "Name": "new-new-trial-ec2-instance-0"
+                        },
+                        "tagsAll": {
+                            "Name": "new-new-trial-ec2-instance-0"
+                        },
+                        "userDataReplaceOnChange": false
+                    },
+                    "outputs": {
+                        "__meta": "{\"e2bfb730-ecaa-11e6-8f88-34363bc7c4c0\":{\"create\":600000000000,\"delete\":1200000000000,\"read\":900000000000,\"update\":600000000000},\"schema_version\":\"1\"}",
+                        "ami": "ami-04b4f1a9cf54c11d0",
+                        "arn": "arn:aws:ec2:us-east-1:196932669980:instance/i-0a0ab9384bbd6f70d",
+                        "associatePublicIpAddress": true,
+                        "availabilityZone": "us-east-1d",
+                        "capacityReservationSpecification": {
+                            "capacityReservationPreference": "open",
+                            "capacityReservationTarget": null
+                        },
+                        "cpuCoreCount": 1,
+                        "cpuOptions": {
+                            "amdSevSnp": "",
+                            "coreCount": 1,
+                            "threadsPerCore": 1
+                        },
+                        "cpuThreadsPerCore": 1,
+                        "creditSpecification": {
+                            "cpuCredits": "standard"
+                        },
+                        "disableApiStop": false,
+                        "disableApiTermination": false,
+                        "ebsBlockDevices": [],
+                        "ebsOptimized": false,
+                        "enablePrimaryIpv6": null,
+                        "enclaveOptions": {
+                            "enabled": false
+                        },
+                        "ephemeralBlockDevices": [],
+                        "getPasswordData": false,
+                        "hibernation": false,
+                        "hostId": "",
+                        "hostResourceGroupArn": null,
+                        "iamInstanceProfile": "",
+                        "id": "i-0a0ab9384bbd6f70d",
+                        "instanceInitiatedShutdownBehavior": "stop",
+                        "instanceLifecycle": "",
+                        "instanceMarketOptions": null,
+                        "instanceState": "running",
+                        "instanceType": "t2.micro",
+                        "ipv6AddressCount": 0,
+                        "ipv6Addresses": [],
+                        "keyName": "sinan-ec2-keypair",
+                        "launchTemplate": null,
+                        "maintenanceOptions": {
+                            "autoRecovery": "default"
+                        },
+                        "metadataOptions": {
+                            "httpEndpoint": "enabled",
+                            "httpProtocolIpv6": "disabled",
+                            "httpPutResponseHopLimit": 2,
+                            "httpTokens": "required",
+                            "instanceMetadataTags": "disabled"
+                        },
+                        "monitoring": false,
+                        "networkInterfaces": [],
+                        "outpostArn": "",
+                        "passwordData": "",
+                        "placementGroup": "",
+                        "placementPartitionNumber": 0,
+                        "primaryNetworkInterfaceId": "eni-0d054b49771a0c5fa",
+                        "privateDns": "ip-172-31-19-37.ec2.internal",
+                        "privateDnsNameOptions": {
+                            "enableResourceNameDnsARecord": false,
+                            "enableResourceNameDnsAaaaRecord": false,
+                            "hostnameType": "ip-name"
+                        },
+                        "privateIp": "172.31.19.37",
+                        "publicDns": "ec2-54-234-13-52.compute-1.amazonaws.com",
+                        "publicIp": "54.234.13.52",
+                        "rootBlockDevice": {
+                            "deleteOnTermination": true,
+                            "deviceName": "/dev/sda1",
+                            "encrypted": false,
+                            "iops": 3000,
+                            "kmsKeyId": "",
+                            "tags": {},
+                            "tagsAll": {},
+                            "throughput": 125,
+                            "volumeId": "vol-0681db1d1f00f66f3",
+                            "volumeSize": 8,
+                            "volumeType": "gp3"
+                        },
+                        "secondaryPrivateIps": [],
+                        "securityGroups": [
+                            "default"
+                        ],
+                        "sourceDestCheck": true,
+                        "spotInstanceRequestId": "",
+                        "subnetId": "subnet-0624cad7cf7014e25",
+                        "tags": {
+                            "Name": "new-new-trial-ec2-instance-0"
+                        },
+                        "tagsAll": {
+                            "Name": "new-new-trial-ec2-instance-0"
+                        },
+                        "tenancy": "default",
+                        "userData": null,
+                        "userDataBase64": null,
+                        "userDataReplaceOnChange": false,
+                        "volumeTags": null,
+                        "vpcSecurityGroupIds": [
+                            "sg-0f3fcd91588139fd6"
+                        ]
+                    },
+                    "parent": "urn:pulumi:dev::project::pulumi:pulumi:Stack::project-dev",
+                    "provider": "urn:pulumi:dev::project::pulumi:providers:aws::default_6_69_0::b1096f7e-81e2-4f78-b1d5-33c865a356df",
+                    "propertyDependencies": {
+                        "ami": [],
+                        "instanceType": [],
+                        "keyName": [],
+                        "tags": []
+                    },
+                    "created": "2025-02-25T16:06:55.239887Z",
+                    "modified": "2025-02-25T16:06:55.239887Z",
+                    "sourcePosition": "project:///node:internal/modules/esm/module_job#396,35"
+                },
+                {
+                    "urn": "urn:pulumi:dev::project::aws:ec2/instance:Instance::new-new-trial-instance-2",
+                    "custom": true,
+                    "id": "i-0d78d8e70499c0191",
+                    "type": "aws:ec2/instance:Instance",
+                    "inputs": {
+                        "__defaults": [
+                            "getPasswordData",
+                            "sourceDestCheck",
+                            "userDataReplaceOnChange"
+                        ],
+                        "ami": "ami-04b4f1a9cf54c11d0",
+                        "getPasswordData": false,
+                        "instanceType": "t2.micro",
+                        "keyName": "sinan-ec2-keypair",
+                        "sourceDestCheck": true,
+                        "tags": {
+                            "Name": "new-new-trial-ec2-instance-2"
+                        },
+                        "tagsAll": {
+                            "Name": "new-new-trial-ec2-instance-2"
+                        },
+                        "userDataReplaceOnChange": false
+                    },
+                    "outputs": {
+                        "__meta": "{\"e2bfb730-ecaa-11e6-8f88-34363bc7c4c0\":{\"create\":600000000000,\"delete\":1200000000000,\"read\":900000000000,\"update\":600000000000},\"schema_version\":\"1\"}",
+                        "ami": "ami-04b4f1a9cf54c11d0",
+                        "arn": "arn:aws:ec2:us-east-1:196932669980:instance/i-0d78d8e70499c0191",
+                        "associatePublicIpAddress": true,
+                        "availabilityZone": "us-east-1d",
+                        "capacityReservationSpecification": {
+                            "capacityReservationPreference": "open",
+                            "capacityReservationTarget": null
+                        },
+                        "cpuCoreCount": 1,
+                        "cpuOptions": {
+                            "amdSevSnp": "",
+                            "coreCount": 1,
+                            "threadsPerCore": 1
+                        },
+                        "cpuThreadsPerCore": 1,
+                        "creditSpecification": {
+                            "cpuCredits": "standard"
+                        },
+                        "disableApiStop": false,
+                        "disableApiTermination": false,
+                        "ebsBlockDevices": [],
+                        "ebsOptimized": false,
+                        "enablePrimaryIpv6": null,
+                        "enclaveOptions": {
+                            "enabled": false
+                        },
+                        "ephemeralBlockDevices": [],
+                        "getPasswordData": false,
+                        "hibernation": false,
+                        "hostId": "",
+                        "hostResourceGroupArn": null,
+                        "iamInstanceProfile": "",
+                        "id": "i-0d78d8e70499c0191",
+                        "instanceInitiatedShutdownBehavior": "stop",
+                        "instanceLifecycle": "",
+                        "instanceMarketOptions": null,
+                        "instanceState": "running",
+                        "instanceType": "t2.micro",
+                        "ipv6AddressCount": 0,
+                        "ipv6Addresses": [],
+                        "keyName": "sinan-ec2-keypair",
+                        "launchTemplate": null,
+                        "maintenanceOptions": {
+                            "autoRecovery": "default"
+                        },
+                        "metadataOptions": {
+                            "httpEndpoint": "enabled",
+                            "httpProtocolIpv6": "disabled",
+                            "httpPutResponseHopLimit": 2,
+                            "httpTokens": "required",
+                            "instanceMetadataTags": "disabled"
+                        },
+                        "monitoring": false,
+                        "networkInterfaces": [],
+                        "outpostArn": "",
+                        "passwordData": "",
+                        "placementGroup": "",
+                        "placementPartitionNumber": 0,
+                        "primaryNetworkInterfaceId": "eni-058343ee77dfcea51",
+                        "privateDns": "ip-172-31-29-64.ec2.internal",
+                        "privateDnsNameOptions": {
+                            "enableResourceNameDnsARecord": false,
+                            "enableResourceNameDnsAaaaRecord": false,
+                            "hostnameType": "ip-name"
+                        },
+                        "privateIp": "172.31.29.64",
+                        "publicDns": "ec2-54-82-11-10.compute-1.amazonaws.com",
+                        "publicIp": "54.82.11.10",
+                        "rootBlockDevice": {
+                            "deleteOnTermination": true,
+                            "deviceName": "/dev/sda1",
+                            "encrypted": false,
+                            "iops": 3000,
+                            "kmsKeyId": "",
+                            "tags": {},
+                            "tagsAll": {},
+                            "throughput": 125,
+                            "volumeId": "vol-079a5292b114462a0",
+                            "volumeSize": 8,
+                            "volumeType": "gp3"
+                        },
+                        "secondaryPrivateIps": [],
+                        "securityGroups": [
+                            "default"
+                        ],
+                        "sourceDestCheck": true,
+                        "spotInstanceRequestId": "",
+                        "subnetId": "subnet-0624cad7cf7014e25",
+                        "tags": {
+                            "Name": "new-new-trial-ec2-instance-2"
+                        },
+                        "tagsAll": {
+                            "Name": "new-new-trial-ec2-instance-2"
+                        },
+                        "tenancy": "default",
+                        "userData": null,
+                        "userDataBase64": null,
+                        "userDataReplaceOnChange": false,
+                        "volumeTags": null,
+                        "vpcSecurityGroupIds": [
+                            "sg-0f3fcd91588139fd6"
+                        ]
+                    },
+                    "parent": "urn:pulumi:dev::project::pulumi:pulumi:Stack::project-dev",
+                    "provider": "urn:pulumi:dev::project::pulumi:providers:aws::default_6_69_0::b1096f7e-81e2-4f78-b1d5-33c865a356df",
+                    "propertyDependencies": {
+                        "ami": [],
+                        "instanceType": [],
+                        "keyName": [],
+                        "tags": []
+                    },
+                    "created": "2025-02-25T16:06:55.276641Z",
+                    "modified": "2025-02-25T16:06:55.276641Z",
+                    "sourcePosition": "project:///node:internal/modules/esm/module_job#396,35"
+                },
+                {
+                    "urn": "urn:pulumi:dev::project::aws:ec2/instance:Instance::new-new-trial-instance-1",
+                    "custom": true,
+                    "id": "i-0d1df1b838f6a7ca8",
+                    "type": "aws:ec2/instance:Instance",
+                    "inputs": {
+                        "__defaults": [
+                            "getPasswordData",
+                            "sourceDestCheck",
+                            "userDataReplaceOnChange"
+                        ],
+                        "ami": "ami-04b4f1a9cf54c11d0",
+                        "getPasswordData": false,
+                        "instanceType": "t2.micro",
+                        "keyName": "sinan-ec2-keypair",
+                        "sourceDestCheck": true,
+                        "tags": {
+                            "Name": "new-new-trial-ec2-instance-1"
+                        },
+                        "tagsAll": {
+                            "Name": "new-new-trial-ec2-instance-1"
+                        },
+                        "userDataReplaceOnChange": false
+                    },
+                    "outputs": {
+                        "__meta": "{\"e2bfb730-ecaa-11e6-8f88-34363bc7c4c0\":{\"create\":600000000000,\"delete\":1200000000000,\"read\":900000000000,\"update\":600000000000},\"schema_version\":\"1\"}",
+                        "ami": "ami-04b4f1a9cf54c11d0",
+                        "arn": "arn:aws:ec2:us-east-1:196932669980:instance/i-0d1df1b838f6a7ca8",
+                        "associatePublicIpAddress": true,
+                        "availabilityZone": "us-east-1d",
+                        "capacityReservationSpecification": {
+                            "capacityReservationPreference": "open",
+                            "capacityReservationTarget": null
+                        },
+                        "cpuCoreCount": 1,
+                        "cpuOptions": {
+                            "amdSevSnp": "",
+                            "coreCount": 1,
+                            "threadsPerCore": 1
+                        },
+                        "cpuThreadsPerCore": 1,
+                        "creditSpecification": {
+                            "cpuCredits": "standard"
+                        },
+                        "disableApiStop": false,
+                        "disableApiTermination": false,
+                        "ebsBlockDevices": [],
+                        "ebsOptimized": false,
+                        "enablePrimaryIpv6": null,
+                        "enclaveOptions": {
+                            "enabled": false
+                        },
+                        "ephemeralBlockDevices": [],
+                        "getPasswordData": false,
+                        "hibernation": false,
+                        "hostId": "",
+                        "hostResourceGroupArn": null,
+                        "iamInstanceProfile": "",
+                        "id": "i-0d1df1b838f6a7ca8",
+                        "instanceInitiatedShutdownBehavior": "stop",
+                        "instanceLifecycle": "",
+                        "instanceMarketOptions": null,
+                        "instanceState": "running",
+                        "instanceType": "t2.micro",
+                        "ipv6AddressCount": 0,
+                        "ipv6Addresses": [],
+                        "keyName": "sinan-ec2-keypair",
+                        "launchTemplate": null,
+                        "maintenanceOptions": {
+                            "autoRecovery": "default"
+                        },
+                        "metadataOptions": {
+                            "httpEndpoint": "enabled",
+                            "httpProtocolIpv6": "disabled",
+                            "httpPutResponseHopLimit": 2,
+                            "httpTokens": "required",
+                            "instanceMetadataTags": "disabled"
+                        },
+                        "monitoring": false,
+                        "networkInterfaces": [],
+                        "outpostArn": "",
+                        "passwordData": "",
+                        "placementGroup": "",
+                        "placementPartitionNumber": 0,
+                        "primaryNetworkInterfaceId": "eni-00fdf6cd7423af7f4",
+                        "privateDns": "ip-172-31-30-238.ec2.internal",
+                        "privateDnsNameOptions": {
+                            "enableResourceNameDnsARecord": false,
+                            "enableResourceNameDnsAaaaRecord": false,
+                            "hostnameType": "ip-name"
+                        },
+                        "privateIp": "172.31.30.238",
+                        "publicDns": "ec2-44-223-32-66.compute-1.amazonaws.com",
+                        "publicIp": "44.223.32.66",
+                        "rootBlockDevice": {
+                            "deleteOnTermination": true,
+                            "deviceName": "/dev/sda1",
+                            "encrypted": false,
+                            "iops": 3000,
+                            "kmsKeyId": "",
+                            "tags": {},
+                            "tagsAll": {},
+                            "throughput": 125,
+                            "volumeId": "vol-07ec5ec976990c57b",
+                            "volumeSize": 8,
+                            "volumeType": "gp3"
+                        },
+                        "secondaryPrivateIps": [],
+                        "securityGroups": [
+                            "default"
+                        ],
+                        "sourceDestCheck": true,
+                        "spotInstanceRequestId": "",
+                        "subnetId": "subnet-0624cad7cf7014e25",
+                        "tags": {
+                            "Name": "new-new-trial-ec2-instance-1"
+                        },
+                        "tagsAll": {
+                            "Name": "new-new-trial-ec2-instance-1"
+                        },
+                        "tenancy": "default",
+                        "userData": null,
+                        "userDataBase64": null,
+                        "userDataReplaceOnChange": false,
+                        "volumeTags": null,
+                        "vpcSecurityGroupIds": [
+                            "sg-0f3fcd91588139fd6"
+                        ]
+                    },
+                    "parent": "urn:pulumi:dev::project::pulumi:pulumi:Stack::project-dev",
+                    "provider": "urn:pulumi:dev::project::pulumi:providers:aws::default_6_69_0::b1096f7e-81e2-4f78-b1d5-33c865a356df",
+                    "propertyDependencies": {
+                        "ami": [],
+                        "instanceType": [],
+                        "keyName": [],
+                        "tags": []
+                    },
+                    "created": "2025-02-25T16:06:55.570122Z",
+                    "modified": "2025-02-25T16:06:55.570122Z",
+                    "sourcePosition": "project:///node:internal/modules/esm/module_job#396,35"
+                }
+            ],
+            "metadata": {}
+        }
+    }
+}

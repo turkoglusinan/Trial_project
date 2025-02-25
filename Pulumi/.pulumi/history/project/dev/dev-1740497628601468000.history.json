@@ -1,0 +1,25 @@
+{
+    "kind": "destroy",
+    "startTime": 1740497536,
+    "message": "",
+    "environment": {
+        "exec.kind": "cli",
+        "pulumi.arch": "arm64",
+        "pulumi.os": "darwin",
+        "pulumi.version": "v3.152.0",
+        "stack.environments": "[]",
+        "updatePlan": "false"
+    },
+    "config": {
+        "aws:region": "us-east-1",
+        "pulumi:tags": {
+            "pulumi:template": "aws-javascript"
+        }
+    },
+    "version": 0,
+    "result": "succeeded",
+    "endTime": 1740497628,
+    "resourceChanges": {
+        "delete": 4
+    }
+}

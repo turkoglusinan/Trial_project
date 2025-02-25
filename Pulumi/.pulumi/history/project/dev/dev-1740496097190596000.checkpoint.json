@@ -1,0 +1,129 @@
+{
+    "version": 3,
+    "checkpoint": {
+        "stack": "organization/project/dev",
+        "latest": {
+            "manifest": {
+                "time": "2025-02-25T10:08:17.18153-05:00",
+                "magic": "e6f9b63eec1c02224f3d9bb9346dbfaeb256b3b4d71dc3ee7581d37b584369c2",
+                "version": "v3.152.0"
+            },
+            "secrets_providers": {
+                "type": "passphrase",
+                "state": {
+                    "salt": "v1:zIJkvG9qN4g=:v1:W53l0XC4yHxCQF3n:OuUdEClBtziJ1TK75ZMHvq2btZWLVw=="
+                }
+            },
+            "resources": [
+                {
+                    "urn": "urn:pulumi:dev::project::pulumi:pulumi:Stack::project-dev",
+                    "custom": false,
+                    "type": "pulumi:pulumi:Stack",
+                    "outputs": {
+                        "bucketName": "my-bucket-27cfd30"
+                    },
+                    "created": "2025-02-25T15:08:15.064219Z",
+                    "modified": "2025-02-25T15:08:15.064219Z",
+                    "sourcePosition": "project:///node_modules/@pulumi/runtime/stack.ts#38,23"
+                },
+                {
+                    "urn": "urn:pulumi:dev::project::pulumi:providers:aws::default_6_69_0",
+                    "custom": true,
+                    "id": "2281a05d-1d67-48d2-bcbf-765649476c62",
+                    "type": "pulumi:providers:aws",
+                    "inputs": {
+                        "__internal": {},
+                        "region": "us-east-1",
+                        "skipCredentialsValidation": "false",
+                        "skipRegionValidation": "true",
+                        "version": "6.69.0"
+                    },
+                    "outputs": {
+                        "region": "us-east-1",
+                        "skipCredentialsValidation": "false",
+                        "skipRegionValidation": "true",
+                        "version": "6.69.0"
+                    },
+                    "created": "2025-02-25T15:08:16.437915Z",
+                    "modified": "2025-02-25T15:08:16.437915Z"
+                },
+                {
+                    "urn": "urn:pulumi:dev::project::aws:s3/bucketV2:BucketV2::my-bucket",
+                    "custom": true,
+                    "id": "my-bucket-27cfd30",
+                    "type": "aws:s3/bucketV2:BucketV2",
+                    "inputs": {
+                        "__defaults": [
+                            "bucket",
+                            "forceDestroy"
+                        ],
+                        "bucket": "my-bucket-27cfd30",
+                        "forceDestroy": false
+                    },
+                    "outputs": {
+                        "__meta": "{\"e2bfb730-ecaa-11e6-8f88-34363bc7c4c0\":{\"create\":1200000000000,\"delete\":3600000000000,\"read\":1200000000000,\"update\":1200000000000}}",
+                        "accelerationStatus": "",
+                        "acl": null,
+                        "arn": "arn:aws:s3:::my-bucket-27cfd30",
+                        "bucket": "my-bucket-27cfd30",
+                        "bucketDomainName": "my-bucket-27cfd30.s3.amazonaws.com",
+                        "bucketPrefix": "",
+                        "bucketRegionalDomainName": "my-bucket-27cfd30.s3.us-east-1.amazonaws.com",
+                        "corsRules": [],
+                        "forceDestroy": false,
+                        "grants": [
+                            {
+                                "id": "a98ab6101ad485695574ab4734418768c10ee8108c3148646c050e493dd9e654",
+                                "permissions": [
+                                    "FULL_CONTROL"
+                                ],
+                                "type": "CanonicalUser",
+                                "uri": ""
+                            }
+                        ],
+                        "hostedZoneId": "Z3AQBSTGFYJSTF",
+                        "id": "my-bucket-27cfd30",
+                        "lifecycleRules": [],
+                        "loggings": [],
+                        "objectLockConfiguration": null,
+                        "objectLockEnabled": false,
+                        "policy": "",
+                        "region": "us-east-1",
+                        "replicationConfigurations": [],
+                        "requestPayer": "BucketOwner",
+                        "serverSideEncryptionConfigurations": [
+                            {
+                                "rules": [
+                                    {
+                                        "applyServerSideEncryptionByDefaults": [
+                                            {
+                                                "kmsMasterKeyId": "",
+                                                "sseAlgorithm": "AES256"
+                                            }
+                                        ],
+                                        "bucketKeyEnabled": false
+                                    }
+                                ]
+                            }
+                        ],
+                        "versionings": [
+                            {
+                                "enabled": false,
+                                "mfaDelete": false
+                            }
+                        ],
+                        "websiteDomain": null,
+                        "websiteEndpoint": null,
+                        "websites": []
+                    },
+                    "parent": "urn:pulumi:dev::project::pulumi:pulumi:Stack::project-dev",
+                    "provider": "urn:pulumi:dev::project::pulumi:providers:aws::default_6_69_0::2281a05d-1d67-48d2-bcbf-765649476c62",
+                    "created": "2025-02-25T15:08:17.16166Z",
+                    "modified": "2025-02-25T15:08:17.16166Z",
+                    "sourcePosition": "project:///index.js#7,16"
+                }
+            ],
+            "metadata": {}
+        }
+    }
+}

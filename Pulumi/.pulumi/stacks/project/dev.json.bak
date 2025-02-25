@@ -1,0 +1,69 @@
+{
+    "version": 3,
+    "checkpoint": {
+        "stack": "organization/project/dev",
+        "latest": {
+            "manifest": {
+                "time": "2025-02-25T11:08:38.949974-05:00",
+                "magic": "e6f9b63eec1c02224f3d9bb9346dbfaeb256b3b4d71dc3ee7581d37b584369c2",
+                "version": "v3.152.0"
+            },
+            "secrets_providers": {
+                "type": "passphrase",
+                "state": {
+                    "salt": "v1:zIJkvG9qN4g=:v1:W53l0XC4yHxCQF3n:OuUdEClBtziJ1TK75ZMHvq2btZWLVw=="
+                }
+            },
+            "resources": [
+                {
+                    "urn": "urn:pulumi:dev::project::pulumi:providers:aws::default_6_69_0",
+                    "custom": true,
+                    "id": "b1096f7e-81e2-4f78-b1d5-33c865a356df",
+                    "type": "pulumi:providers:aws",
+                    "inputs": {
+                        "__internal": {},
+                        "region": "us-east-1",
+                        "skipCredentialsValidation": "false",
+                        "skipRegionValidation": "true",
+                        "version": "6.69.0"
+                    },
+                    "outputs": {
+                        "region": "us-east-1",
+                        "skipCredentialsValidation": "false",
+                        "skipRegionValidation": "true",
+                        "version": "6.69.0"
+                    },
+                    "created": "2025-02-25T16:06:42.394129Z",
+                    "modified": "2025-02-25T16:06:42.394129Z"
+                }
+            ],
+            "pending_operations": [
+                {
+                    "resource": {
+                        "urn": "urn:pulumi:dev::project::pulumi:providers:aws::default_6_69_0",
+                        "custom": true,
+                        "id": "b1096f7e-81e2-4f78-b1d5-33c865a356df",
+                        "type": "pulumi:providers:aws",
+                        "inputs": {
+                            "__internal": {},
+                            "region": "us-east-1",
+                            "skipCredentialsValidation": "false",
+                            "skipRegionValidation": "true",
+                            "version": "6.69.0"
+                        },
+                        "outputs": {
+                            "region": "us-east-1",
+                            "skipCredentialsValidation": "false",
+                            "skipRegionValidation": "true",
+                            "version": "6.69.0"
+                        },
+                        "created": "2025-02-25T16:06:42.394129Z",
+                        "modified": "2025-02-25T16:06:42.394129Z"
+                    },
+                    "type": "deleting"
+                }
+            ],
+            "metadata": {}
+        }
+    }
+}
