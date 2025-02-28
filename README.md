@@ -1,48 +1,34 @@
-Pulumi EC2 Instance Creator
-This Pulumi project automates the creation of EC2 instances using AWS. You can modify the script to deploy multiple servers as needed.
+Setting Up EC2 Instances
+Follow these steps to set up and manage EC2 instances using Pulumi:
 
-Prerequisites
-Install Pulumi on your computer.
-An AWS account with necessary permissions.
-AWS CLI configured with your credentials (aws configure).
-Setup Instructions
-Clone the repository:
+1. Install Pulumi
+If you haven't installed Pulumi yet, you can do so by following the installation guide for your platform: Install Pulumi.
 
-sh
+2. Login to AWS
+Ensure you have authenticated Pulumi with your AWS account using the AWS CLI:
+
+bash
 Copy
 Edit
-git clone <your-repo-url>
-cd <your-repo-folder>
-Update AWS Configuration:
+aws configure
+3. Update AMI ID and Key Pair
+Update the AMI ID in the Pulumi code. You can find the AMI ID in the EC2 AMI catalog.
+Update the key pair in the code to match the key pair you've created in your AWS account. You can find this in the Network & Security section of the EC2 dashboard.
+4. Modify the Number of Instances
+You can modify the number of instances you'd like to create by adjusting the numInstances variable in the Pulumi code.
 
-AMI ID: Find it in the AWS EC2 AMI catalog and update it in the code.
-Key Pair: Obtain your key pair name from AWS EC2 under Network & Security.
-Modify the Instance Count (Optional):
+5. Create the EC2 Instances
+To create the specified number of EC2 instances, run the following command:
 
-To create multiple servers, update the for loop in the Pulumi code:
-typescript
-Copy
-Edit
-for (let i = 0; i < desiredInstanceCount; i++) {
-    new aws.ec2.Instance(`server-${i}`, { ... });
-}
-Deploy the EC2 Instances:
-Run the following command and confirm when prompted:
-
-sh
-Copy
-Edit
+```shellscript
 pulumi up
-This will display the created EC2 instance IDs in the terminal.
-Shutting Down Instances
-To delete all instances, run:
+```
+This command will ask for confirmation before proceeding. Once you confirm, Pulumi will create the EC2 instances, and the instance IDs will be displayed in the terminal.
 
-sh
-Copy
-Edit
+6. Destroy the EC2 Instances
+To shut down and terminate all of the created EC2 instances, run the following command:
+
+```shellscript
 pulumi destroy
-Confirm the prompt to terminate all instances.
-
-Customizing for Other Cloud Providers
-If you want to use a different cloud provider (e.g., Azure, Google Cloud), update the Pulumi code accordingly. Refer to Pulumi documentation for more details.
-
+```
+This will automatically terminate all the EC2 instances that were created.
