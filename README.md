@@ -1,3 +1,14 @@
+Kubernetes
+
+1-There are 2 script shell one common and one master shell script. 
+
+2-Need to download common script for all nodes. Need to download master shell only for first master node.
+
+3-For adding second control plane you need to get join token from first master node and then add first control plane. And for worker node again need to get join token and add nodes as worker node to your cluster.
+
+
+Pulumi Files
+
 Setting Up EC2 Instances
 Follow these steps to set up and manage EC2 instances using Pulumi:
 
@@ -7,10 +18,7 @@ If you haven't installed Pulumi yet, you can do so by following the installation
 2. Login to AWS
 Ensure you have authenticated Pulumi with your AWS account using the AWS CLI:
 
-bash
-Copy
-Edit
-aws configure
+
 3. Update AMI ID and Key Pair
 Update the AMI ID in the Pulumi code. You can find the AMI ID in the EC2 AMI catalog.
 Update the key pair in the code to match the key pair you've created in your AWS account. You can find this in the Network & Security section of the EC2 dashboard.
